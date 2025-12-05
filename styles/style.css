@@ -1,13 +1,9 @@
-/* HEADER */
-
 .header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
   justify-items: center;
-  /* background-color: purple; */
-  padding: 0px 50px 0px 50px;
-  height: 293px;
+  padding: 92px 50px 96px 50px;
 }
 
 .header__nav {
@@ -53,8 +49,6 @@
   line-height: 135%;
 }
 
-/* COVER - main content 1 */
-
 .cover {
   width: 1100px;
   min-height: 757px;
@@ -92,14 +86,14 @@
 
 .cover__title-center {
   text-align: center;
-  margin-right: -0.3em;
+  margin-left: 0.3em;
   margin-bottom: 18px;
 }
 
 .cover__title-right {
-  /* display: block; */
   text-align: end;
-  margin-right: -0.3em;
+  position: relative;
+  left: 0.3em;
 }
 
 .cover__description {
@@ -112,21 +106,20 @@
 .cover__description-text {
   font-size: 22px;
   text-transform: uppercase;
-  color: #fff;
+  color: white;
   text-align: start;
   word-spacing: 18px;
 }
 
 .bet-button {
-  border: 1px solid #fff;
+  border: 1px solid white;
   width: 256px;
-  height: 51px;
-  font-weight: 500;
+  padding: 10px;
   font-size: 22px;
   text-transform: uppercase;
   text-align: center;
-  color: #fff;
   background: none;
+  color: white;
 }
 
 .lots {
@@ -137,7 +130,7 @@
   font-weight: 700;
   font-size: 40px;
   text-transform: uppercase;
-  color: #000;
+  color: white;
   padding-left: 40px;
   margin-bottom: 27px;
 }
@@ -151,7 +144,9 @@
 .lots__cards-item {
   position: relative;
   width: 334px;
-  height: 596px;
+  min-height: 596px;
+  background-size: cover;
+  background-position: center;
 }
 
 .lots__cards-item-content {
@@ -164,20 +159,14 @@
 
 .lots__cards-overlay-film {
   background-image: url(../images/card-lot-01.jpg);
-  background-size: cover;
-  background-position: center;
 }
 
 .lots__cards-overlay-book {
   background-image: url(../images/card-lot-02.jpg);
-  background-size: cover;
-  background-position: center;
 }
 
 .lots__cards-overlay-picture {
   background-image: url(../images/card-lot-03.jpg);
-  background-size: cover;
-  background-position: center;
 }
 
 .lots__cards-item-title {
@@ -211,7 +200,6 @@
   margin: 123px 24px 0 24px;
   justify-content: space-between;
   width: 1052px;
-  height: 595px;
 }
 
 .about__logo {
@@ -241,6 +229,7 @@
   font-size: 40px;
   text-transform: uppercase;
   color: #000;
+  margin-bottom: 100px;
 }
 
 .about__content-description {
@@ -264,8 +253,7 @@
   display: flex;
   justify-content: space-between;
   margin-top: 180px;
-  padding: 0 50px;
-  height: 180px;
+  padding: 0 50px 96px 50px;
 }
 
 .footer__nav-items {
@@ -283,7 +271,6 @@
 }
 
 .footer__social-item {
-  list-style-type: none;
   width: 48px;
   height: 48px;
 }
